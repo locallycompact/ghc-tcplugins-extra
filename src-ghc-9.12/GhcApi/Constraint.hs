@@ -1,7 +1,6 @@
 module GhcApi.Constraint
   ( Ct(..)
   , CtEvidence(..)
-  , CtLoc
   , CanEqLHS(..)
   , ctLoc
   , ctEvId
@@ -10,4 +9,4 @@ module GhcApi.Constraint
 where
 
 import GHC.Tc.Types.Constraint
-  (Ct (..), CtEvidence (..), CanEqLHS (..), CtLoc, ctLoc, ctEvId, mkNonCanonical)
+  (Ct (..), CtEvidence (..), CanEqLHS (..), ctLoc, ctEvId, mkNonCanonical)

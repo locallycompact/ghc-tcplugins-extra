@@ -4,8 +4,9 @@ module Internal.Constraint (newGiven, flatToCt, mkSubst, overEvidencePredType) w
 
 import GhcApi.GhcPlugins
 import GhcApi.Constraint
-  (Ct(..), CtEvidence(..), CanEqLHS(..), CtLoc, ctLoc, ctEvId, mkNonCanonical)
+  (Ct(..), CtEvidence(..), CanEqLHS(..), ctLoc, ctEvId, mkNonCanonical)
 
+import GHC.Tc.Types.CtLoc (CtLoc)
 import GHC.Tc.Utils.TcType (TcType)
 import GHC.Tc.Types.Constraint (DictCt(..), IrredCt(..), EqCt(..), QCInst(..))
 import GHC.Tc.Types.Evidence (EvTerm(..), EvBindsVar)
